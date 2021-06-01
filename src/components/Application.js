@@ -110,8 +110,8 @@ const Application = () => {
    }
  
    const handlePagination = (e) => {
-       setCount((e-1)*4)
-       setMaxPokemon((e*4)-1)
+       setCount((e.selected)*4)
+       setMaxPokemon(((e.selected+1)*4)-1)
        setPokemonArray([])
        setFlag(!flag)
    }

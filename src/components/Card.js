@@ -11,7 +11,7 @@ const Card = ({name, sprite, type, hp, attack, defense, speed}) => {
     return(
             <div className="pokemon-card">
                 <img src={sprite}  alt="..." />
-                <div >
+                <div>
                     <h5 >{name}</h5>
                     {typeList}
                     <p>HP:<span>{hp}</span></p>

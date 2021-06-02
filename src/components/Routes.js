@@ -6,7 +6,7 @@ import ProtectedRoute from "./ProtectedRoute"
 const Routes = () => {
     return(
         <Switch>
-            <ProtectedRoute path="/app">
+            <ProtectedRoute path="/pokedex">
                 <Application />
             </ProtectedRoute>
             <Route path="/login">

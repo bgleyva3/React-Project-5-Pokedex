@@ -8,7 +8,7 @@ const Login = () => {
     return(
         <div>
             { user ? <h1>Is Logged</h1> : <h1>It is Not</h1> }
-            <button onClick={() => signIn(()=>{history.push("/app")})}>Login</button>
+            <button onClick={() => signIn(()=>{history.push("/pokedex")})}>Login</button>
         </div>
     )
 }

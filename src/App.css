@@ -7,15 +7,15 @@
 }
 
 .cards-container{
-  display: flex;
   background-color: red;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .pokemon-card{
   width: 14rem;
   background-color: white;
   border: solid black 1px;
+  display: inline-block;
 }
 
 .button-pagination:focus {

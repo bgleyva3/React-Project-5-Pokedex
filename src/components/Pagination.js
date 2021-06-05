@@ -17,8 +17,7 @@ const Pagination = ({numberOfPokemons, handlePagination}) => {
     }) */
 
     return (
-        <div>
-            {/* {paginationList} */}
+        <div className="pagination-container">
             {
                 numberOfPokemons[0] ?
                 <ReactPaginate

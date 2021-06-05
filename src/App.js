@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <button onClick={() => signOut(()=>{})}>Logout</button>
+        <div className="banner">
+          <p>Hello, Trainer</p>
+          <button onClick={() => signOut(()=>{})}>Logout</button>
+        </div>
         <Routes />
       </Router>
     </div>

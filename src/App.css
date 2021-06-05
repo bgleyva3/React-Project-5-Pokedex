@@ -1,14 +1,33 @@
+*{
+  margin:0
+}
+
 .App {
   text-align: center;
 }
 
-.application-container{
-  background-color: yellow;
+.banner{
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
+.pokedex-title{
+  margin: 0 0 1rem 0;
+}
+
+.application-container{
+  background-color: yellow;
+  padding: 2rem 0;
+}
+
+
 .cards-container{
-  background-color: red;
+  background-color: blue;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .pokemon-card{
@@ -31,15 +50,22 @@
 
 /* ----------- Pagination ----------- */
 
-ul.pagination {
-  padding: 0;
+.pagination-container{
+  background-color: green;
+  padding: 1rem;
 }
 
 .pagination {
   display: flex;
   list-style: none;
   justify-content: center;
+  height: auto;
 }
+
+ul.pagination {
+  padding: 0;
+}
+
 .pagination > .active > a{
   background-color: #47ccde ;
   border-color: #47ccde ;

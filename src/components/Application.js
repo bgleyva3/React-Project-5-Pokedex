@@ -117,19 +117,21 @@ const Application = () => {
    }
 
     return(
-        <div className="application-container">
-            <h1>This is the Application!</h1>
-            <form onSubmit={handleSubmit(e => handleSearch(e, reset))} >
-                <input placeholder="Enter Pokemon" {...register("pokemon", { required: true })} ></input>
-                <button type="submit">Search</button>
-            </form>
-            <p>{errMessage}</p>
-            <select onChange={e => handleSelect(e)} >
-                <option value="DEFAULT">Search by type</option>
-                {dataTypeList}
-            </select>
+        <div>
+            <div className="application-container">
+                <h1 className="pokedex-title">POKEDEX</h1>
+                <form onSubmit={handleSubmit(e => handleSearch(e, reset))} >
+                    <input placeholder="Enter Pokemon" {...register("pokemon", { required: true })} ></input>
+                    <button type="submit">Search</button>
+                </form>
+                <p>{errMessage}</p>
+                <select onChange={e => handleSelect(e)} >
+                    <option value="DEFAULT">Search by type</option>
+                    {dataTypeList}
+                </select>
+            </div>
             <Pagination numberOfPokemons={allPokemonArray} handlePagination={handlePagination}/>
-            <div className="cards-loading-container">
+            <div>
                 <div className="loading">
                     {
                         loading ? <Loading /> : <div></div>
